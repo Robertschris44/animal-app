@@ -1,4 +1,4 @@
-var apiUrl = "https://archive.org/advancedsearch.php?q=subject:google+sheets&output=json";
+var apiUrl = "https://api.adoptapet.com/search/pets_at_shelter?key=A34F48&v=1&output=xml&shelter_id=2342";
 
 var listEl = document.getElementById("myData");
 
