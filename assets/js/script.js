@@ -1,18 +1,18 @@
-var apiUrl = " "
+import fetchJsonp from 'fetchJsonp';
+
+var apiUrl = "http://api.petfinder.com/pet.find?format=json&key=&animal=${animal}&location=${zip}&callback=callback";
 
 var listEl = document.getElementById("myData");
 
-fetch(apiUrl)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        console.log(data);
-        
-    })
-    .catch(function(error){
-        console.log(error);
-    });
+fetchJsonp(apiUrl, {
+    jsonpCallbackFunction: 'callback'
+})
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+
+
+
 
 // this works:
     // var apiUrl = "https://dog.ceo/api/breeds/list/all";
