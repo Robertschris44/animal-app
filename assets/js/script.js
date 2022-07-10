@@ -1,17 +1,20 @@
-import fetchJsonp from 'fetchJsonp';
-
-var apiUrl = "http://api.petfinder.com/pet.find?format=json&key=&animal=${animal}&location=${zip}&callback=callback";
+var apiUrl = "http://api.nytimes.com/svc/semantic/v2/concept/search.json?query=pets&api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
 
 var listEl = document.getElementById("myData");
 
-fetchJsonp(apiUrl, {
-    jsonpCallbackFunction: 'callback'
-})
-    .then(res => res.json())
-    .then(data => console.log(data))
-    .catch(err => console.log(err));
+fetch(apiUrl)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+        
+    })
+    .catch(function(error){
+        console.log(error);
+    });
 
-
+  //  http://api.nytimes.com/svc/semantic/v2/concept/search.json?query=animals&nytd_topic=rescue,shelter,pet&api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz
 
 
 // this works:
