@@ -8,3 +8,4 @@ Found working API with New York Times
 ## Tail wind & CSS
 input the tail wind from work inside of html to use instead of bootstrap
 created a css style sheet for more in depth editing when needed
+adding style to submit form options with tail wind

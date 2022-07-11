@@ -9,16 +9,30 @@
     <link rel="stylesheet" href="./assets/style.css"/>
 
 </head>
-<body>
-    <div class="divBox flex items-center justify-center h-screen w-screen">
-    <h1> Look at all the puppies!</h1>
-    <p id="myData">Toe beans and tail wags!</p>
-    </div>
+<body class="bg-gray-100">
+    <section>
+    
+    <form class="px-4 my-32 max-w-3xl mx-auto space-y-6">
+        <div class="header-1">
+            <h1> New Articles Here!!</h1>
+            </div>
+            <div class="para-text">
+                <p>Click on the button below to stay updated on the latest news!</p>
+            </div>
+       <div>
+        <label for="name">Submit City</label>
+        <input class="border border-gray-400 block py-2 px-4 rounded focus:outline-none focus:border-blue-500" 
+        type="text" id="city-name" type="text"/>
+       </div>
+       <button type="submit">Press to get article</button>
+    </form>
+    
+    
 
-    <div>
-        <button class="click-btn">Click Me</button>
-    </div>
 
+
+
+    </section>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
