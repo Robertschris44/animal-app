@@ -21,4 +21,4 @@ fetch(apiUrl)
 
     // var apiUrl = "https://dog.ceo/api/breeds/list/all";
     // "https://api.chucknorris.io/jokes/random"
-    //"http://api.nytimes.com/svc/semantic/v2/concept/search.json?query=pets&api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
+    // "http://api.nytimes.com/svc/semantic/v2/concept/search.json?query=pets&api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
