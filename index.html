@@ -4,12 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Buddy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Random Articles</title>
-
+   
 </head>
 <body class="bg-gray-100">
+    <form class="px-4 my-32 max-w-3xl mx-auto space-y-6">
+        <div class="header-1">
+            <h1 class="text-3xl font-semibold"> New Articles Here!!</h1>
+        </div>
+        <div class="para-text">
+            <p class=“text-gray-600”>Click on the button below to stay updated on the latest random news!</p>
+        </div>
+        <div>
+            <button id="get-art" class="rounded-full py-2 px-3 uppercase font-bold cursor-pointer border-black border-2"
+            type="submit">Press to get article and joke</button>
+        </div>
+    </form>
+    <button id="modalBtn" class="button">Click</button>
+
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+            <p>Puppy here! </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, debitis eveniet, perferendis vitae nisi atque, rerum repellendus distinctio magni aliquam officiis vero veritatis ducimus accusamus unde corporis a dignissimos porro.</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body class="bg-gray-100">
     <form class="px-4 my-32 max-w-3xl mx-auto space-y-6">
         <div class="header-1">
             <h1 class="text-3xl font-semibold"> New Articles Here!!</h1>
@@ -21,6 +77,8 @@
        <button id="get-art" class="rounded-full py-2 px-3 uppercase font-bold cursor-pointer border-black border-2"
        type="submit">Press to get article and joke</button>
     </form>
+
+    <br>
     
     <div class="wrapper" id="saveArticleColumn">
         <div class ="card">
@@ -32,11 +90,11 @@
     </div>
     <div class="wrapper" id="saveFunnyColumn">
         <div class= "card">
-            <h3>After reading all that... </h3>
-            <button id="modalBtn" class="button">Click here if you need a buddy</button>
+            <h3>The news can be emotionally taxing:</h3>
+            <button id="modalBtn" class="button">Click for Random Good-Vibes Pup</button>
                 <div id="simpleModal" class="modal">
                     <div class="modal-content">
-                        <span class="closeBtn">&times;</span>
+                        <span id="closeBtn">&times;</span>
                         <p>Imagine a pup, here</p>
                     </div>
                 </div>
@@ -53,4 +111,4 @@
     </div>
     <script src="./assets/js/script.js"></script>
 </body>
-</html>
+</html> -->
