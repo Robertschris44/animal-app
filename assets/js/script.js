@@ -4,6 +4,8 @@ var modal = document.getElementById('simpleModal');
 var modalBtn = document.getElementById('modalBtn');
 // get close modal button
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
+// get random dog pic
+var randomDogPic = document.getElementById('randomDogPic');
 
 // listen for click
 modalBtn.addEventListener('click', openModal);
@@ -15,6 +17,13 @@ window.addEventListener('click', outsideClick);
 // function to open modal
 function openModal(){
     modal.style.display = 'block';
+    fetch("https://dog.ceo/api/breeds/image/random")
+        .then(res=>res.json())
+        .then(result => {
+            console.log(result)
+            Image.src = result
+        })
+        .catch(err=>console.log(err))
 }
 
 // function to close modal
