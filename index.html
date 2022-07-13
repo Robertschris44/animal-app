@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src=“https://cdn.tailwindcss.com”></script>
-    <link rel=“stylesheet” href=“./assets/style.css”/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Random Articles</title>
 
 </head>
 <body class="bg-gray-100">
-    <form class=“px-4 my-32 max-w-3xl mx-auto space-y-6”>
+    <form class="px-4 my-32 max-w-3xl mx-auto space-y-6">
         <div class="header-1">
             <h1 class="text-3xl font-semibold"> New Articles Here!!</h1>
             </div>
@@ -22,6 +22,35 @@
        type="submit">Press to get article and joke</button>
     </form>
     
-    <script src="assets/js/script.js"></script>
+    <div class="wrapper" id="saveArticleColumn">
+        <div class ="card">
+            <h3>OH MY: THAT's interesting... If you need to save this article:</h3>
+                <div class="saveList" id="saveArticle">
+                    <ul id="keepers"></ul>
+                </div>
+        </div>
+    </div>
+    <div class="wrapper" id="saveFunnyColumn">
+        <div class= "card">
+            <h3>After reading all that... </h3>
+            <button id="modalBtn" class="button">Click here if you need a buddy</button>
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+                        <span class="closeBtn">&times;</span>
+                        <p>Imagine a pup, here</p>
+                    </div>
+                </div>
+                <div class="saveList" id="savePup">
+                    <ul id="pups">Doggo</ul>
+
+                </div>
+            <p>And a pinch of levity:</p>
+                <div class="saveList" id="randomJoke">
+                    <ul id="joke">Joke</ul>
+
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
