@@ -18,9 +18,8 @@ modalBtn.addEventListener('click', function(){
         .then(result => {
             console.log(result)
             randomDogPic.src = result.message
-        })
-        .then(result => {
             localStorage.setItem('randomDogPic', JSON.stringify(result))
+        
         })
         .catch(err=>console.log(err));
 })
