@@ -19,12 +19,12 @@ modalBtn.addEventListener('click', function(){
             console.log(result)
             randomDogPic.src = result.message
             localStorage.setItem('randomDogPic', JSON.stringify(result))
-        
+
         })
         .catch(err=>console.log(err));
 })
 
-
+// 
 
 // listen for close click
 closeBtn.addEventListener('click', closeModal);
