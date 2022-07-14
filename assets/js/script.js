@@ -6,8 +6,8 @@ var modalBtn = document.getElementById('modalBtn');
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 // get random dog pic
 var randomDogPic = document.getElementById('randomDogPic');
-// get article 
-// var article = document.getElementById("article");
+// div id for recent buddy to display
+var buddyEl = document.querySelector('#buddy')
 
 
 // listen for randomDogPic button click, display and fetch new image
@@ -19,21 +19,41 @@ modalBtn.addEventListener('click', function(){
             console.log(result)
             randomDogPic.src = result.message
             localStorage.setItem('randomDogPic', JSON.stringify(result))
-        
+
         })
         .catch(err=>console.log(err));
+
 })
 
-
+// 
 
 // listen for close click
 closeBtn.addEventListener('click', closeModal);
+
 // listen for outside click
 window.addEventListener('click', outsideClick);
 
-
 // function to close modal
 function closeModal(){
+    // // create list item
+    // var listBuddyEl = document.createElement("li");
+    // listBuddyEl.className = "buddyList";
+
+    // // create div to hold content and add to list item
+    // var contentInfoEl = document.createElement("div");
+
+    // // give it a class name
+    // contentInfoEl.className = "buddyUrl";
+
+    // JSON.parse(localStorage.getItem('randomDogPic', 'message'));
+    // document.getElementById('buddy').src = '';
+    // // add HTML content to div
+    // contentInfoEl.innerHTML = "<img src=" +  + "</>";
+    // listBuddyEl.appendChild(contentInfoEl);
+
+    // // add list item to list
+    // buddyEl.appendChild(listBuddyEl);
+
     modal.style.display = 'none';
 }
 
