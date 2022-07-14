@@ -6,8 +6,11 @@ var modalBtn = document.getElementById('modalBtn');
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 // get random dog pic
 var randomDogPic = document.getElementById('randomDogPic');
+// get article 
+// var article = document.getElementById("article");
 
-// listen for click
+
+// listen for randomDogPic button click, display and fetch new image
 modalBtn.addEventListener('click', function(){
     modal.style.display = 'block';
     fetch("https://dog.ceo/api/breeds/image/random")
@@ -15,10 +18,13 @@ modalBtn.addEventListener('click', function(){
         .then(result => {
             console.log(result)
             randomDogPic.src = result.message
+            // var stringBuddy = json.stringify(result.message)
+            // localStorage.setItem('randomDogPic', stringBuddy)
         })
         .catch(err=>console.log(err));
 })
-    
+
+
 
 // listen for close click
 closeBtn.addEventListener('click', closeModal);
@@ -41,7 +47,6 @@ function outsideClick(e){
 
 var apiUrl = "http://api.nytimes.com/svc/topstories/v2/us.json?api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
 
-// var listEl = document.getElementById("myData");
 
 fetch(apiUrl)
     .then(function(response){
@@ -55,10 +60,4 @@ fetch(apiUrl)
         console.log(error);
     });
 
-
-    // this works:
-    // "https://api.humorapi.com/jokes/random?api-key=6a579bfcf6ca422d85fccfe8a0d550c2"
-    // "http://api.nytimes.com/svc/semantic/v2/concept/search.json?query=animals&nytd_topic=rescue,shelter,pet&api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz
-    // "https://dog.ceo/api/breeds/image/random";
-    // "https://api.chucknorris.io/jokes/random"
-    // "http://api.nytimes.com/svc/semantic/v2/concept/search.json?query=pets&api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
+    
