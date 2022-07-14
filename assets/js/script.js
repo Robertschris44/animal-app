@@ -55,6 +55,7 @@ fetch(apiUrl)
         let a = document.createElement("a");
         a.setAttribute('href', article.url);
         a.innerHTML = article.title;
+        a.setAttribute("class", "article-title");
 
         let p = document.createElement("p");
         p.innerHTML = article.abstract;
@@ -71,33 +72,3 @@ fetch(apiUrl)
         
 
 
-   
-
-    // this works:
-    // "https://api.humorapi.com/jokes/random?api-key=6a579bfcf6ca422d85fccfe8a0d550c2"
-    // "http://api.nytimes.com/svc/semantic/v2/concept/search.json?query=animals&nytd_topic=rescue,shelter,pet&api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz
-    // "https://dog.ceo/api/breeds/image/random";
-    // "https://api.chucknorris.io/jokes/random"
-    // "http://api.nytimes.com/svc/semantic/v2/concept/search.json?query=pets&api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
-
-//     console.log("results")
-//     fetch(apiUrl)
-//     .then(res=>res.json())
-//     .then(result => {
-//      console.log(result)
-//       getArt.src = result.results.section.us
-//  })
-// .catch(err=>console.log(err));
-// })
-
-// fetch(apiUrl)
-        //     .then(function(response){
-        //         return response.json();
-        //     })
-        //     .then(function(data){
-        //         console.log(data);
-                
-        //     })
-        //     .catch(function(error){
-        //         console.log(error);
-        //     });

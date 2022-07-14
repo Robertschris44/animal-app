@@ -12,6 +12,13 @@ a {
     margin-bottom:16px;
 }
 
+.article-title {
+    font-weight: bold;
+    font-size: xx-large;
+    color: rgb(22, 1, 27);
+    text-decoration: underline;
+}
+
 img {
     height: 200px;
 }
