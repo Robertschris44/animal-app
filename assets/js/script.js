@@ -41,8 +41,6 @@ function outsideClick(e){
 
 var apiUrl = "http://api.nytimes.com/svc/topstories/v2/us.json?api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
 
-// var listEl = document.getElementById("myData");
-
 fetch(apiUrl)
     .then(function(response){
         return response.json();
