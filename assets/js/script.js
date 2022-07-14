@@ -59,8 +59,10 @@ fetch(apiUrl)
         let p = document.createElement("p");
         p.innerHTML = article.abstract;
 
-        
+        let img = document.createElement("img");
+        img.setAttribute('src', article.multimedia[0].url);
 
+        headlines.appendChild(img);
         headlines.appendChild(a);
         headlines.appendChild(p);
 
