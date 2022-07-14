@@ -4,27 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Articles</title>
-    <script src="https://cdn.tailwindcss.com"></script> 
-    <link rel="stylesheet" href="./assets/style.css"/>
-
+    <title>News Buddy</title>
+    <script src="https://kit.fontawesome.com/7b99a06c6b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css"/>
+   
 </head>
 <body class="bg-gray-100">
+    <form id="headlines" class="px-4 my-32 max-w-3xl mx-auto space-y-6">
+        <div class="header-1">
+            <h1 class="text-3xl font-semibold"> New Articles Here!!</h1>
+        </div>
+        <div class="para-text">
+            <p class=“text-gray-600”>Click on the button below to stay updated on the latest random news!</p>
+        </div>
+        <div>
+            <button id="btn" class="rounded-full py-2 px-3 uppercase font-bold cursor-pointer border-black border-2"
+            type="submit">Press to get article</button>
+        </div>
+    </form>
 
-    <form id="form" class="px-4 my-32 max-w-3xl mx-auto space-y-6">
+
+    <button id="modalBtn" class="button">Click <i class='fas fa-paw'></i></button>
+
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2>Your News Buddy</h2>
+            </div>
+            <div class="modal-body">
+            <p>The news is scary. Look at this pup instead! </p>
+            <img id="randomDogPic">
+            </div>
+            <div class="modal-footer">
+                <h3><i class='fas fa-paw'></i></h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body class="bg-gray-100">
+    <form class="px-4 my-32 max-w-3xl mx-auto space-y-6">
         <div class="header-1">
             <h1 class="text-3xl font-semibold"> New Articles Here!!</h1>
             </div>
             <div class="para-text">
-                <p class="text-gray-600">Click on the button below to stay updated on the latest random news!</p>
+                <p class=“text-gray-600”>Click on the button below to stay updated on the latest random news!</p>
             </div>
        <div>
-        
-       <button id="press-art" class="rounded-full py-2 px-3 uppercase font-bold cursor-pointer border-black border-2" 
+       <button id="get-art" class="rounded-full py-2 px-3 uppercase font-bold cursor-pointer border-black border-2"
        type="submit">Press to get article and joke</button>
     </form>
+
+    <br>
     
-    
-    <script src="assets/js/script.js"></script>
+    <div class="wrapper" id="saveArticleColumn">
+        <div class ="card">
+            <h3>OH MY: THAT's interesting... If you need to save this article:</h3>
+                <div class="saveList" id="saveArticle">
+                    <ul id="keepers"></ul>
+                </div>
+        </div>
+    </div>
+    <div class="wrapper" id="saveFunnyColumn">
+        <div class= "card">
+            <h3>The news can be emotionally taxing:</h3>
+            <button id="modalBtn" class="button">Click for Random Good-Vibes Pup</button>
+                <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+                        <span id="closeBtn">&times;</span>
+                        <p>Imagine a pup, here</p>
+                    </div>
+                </div>
+                <div class="saveList" id="savePup">
+                    <ul id="pups">Doggo</ul>
+
+                </div>
+            <p>And a pinch of levity:</p>
+                <div class="saveList" id="randomJoke">
+                    <ul id="joke">Joke</ul>
+
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
-</html>
+</html> -->
