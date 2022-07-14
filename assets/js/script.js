@@ -65,10 +65,6 @@ fetch(apiUrl)
         headlines.appendChild(img);
         headlines.appendChild(a);
         headlines.appendChild(p);
-
-
-
-
     })
 })
         
