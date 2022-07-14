@@ -8,23 +8,23 @@ var closeBtn = document.getElementsByClassName('closeBtn')[0];
 var randomDogPic = document.getElementById('randomDogPic');
 
 // listen for click
-modalBtn.addEventListener('click', openModal);
-// listen for close click
-closeBtn.addEventListener('click', closeModal);
-// listen for outside click
-window.addEventListener('click', outsideClick);
-    
-// function to open modal
-function openModal(){
+modalBtn.addEventListener('click', function(){
     modal.style.display = 'block';
     fetch("https://dog.ceo/api/breeds/image/random")
         .then(res=>res.json())
         .then(result => {
             console.log(result)
-            Image.src = result
+            randomDogPic.src = result.message
         })
-        .catch(err=>console.log(err))
-}
+        .catch(err=>console.log(err));
+})
+    
+
+// listen for close click
+closeBtn.addEventListener('click', closeModal);
+// listen for outside click
+window.addEventListener('click', outsideClick);
+
 
 // function to close modal
 function closeModal(){
