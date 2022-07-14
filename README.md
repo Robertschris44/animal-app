@@ -8,6 +8,7 @@ We used HTML, Tailwindcss, JavaScript to dynamically add elements and interact w
 
 # Future features
 
+Sortable: "Multiple Containers" and "Transformed"
 
 # Collaborators
 Khaylla Hite
