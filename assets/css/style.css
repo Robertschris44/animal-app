@@ -4,6 +4,22 @@ body{
     line-height: 1.6;
 }
 
+a {
+    display: block;
+    color:black;
+    margin-top: 16px;
+    margin-bottom:16px;
+}
+.article-title {
+    font-weight: bold;
+    font-size: xx-large;
+    color: rgb(22, 1, 27);
+    text-decoration: underline;
+}
+img {
+    height: 300px;
+}
+
 .button{
     background: cornflowerblue;
     padding: 1em 2em;
