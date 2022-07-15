@@ -34,7 +34,7 @@ https://bekind-rewind.github.io/animal-app/
 
 # Screen Shots
 
-![News Buddy](/images/news-buddy?raw=true)
+![News Buddy](/images/buddy-modal?raw=true)
 ![News Articles](/images/news-body.png?raw=true)
 
 # PowerPoint
