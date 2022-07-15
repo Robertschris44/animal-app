@@ -8,8 +8,19 @@ We used HTML, Tailwindcss, JavaScript to dynamically add elements and interact w
 
 # Future features
 
-Users click a button to retrieve articles.
-Sortable: "Multiple Containers" and "Transformed" to save articles gallery
+For News Articles:
+1) Articles display in a prominent gallery that scrolls on left or right arrow click
+
+2) Add Sortable & Droppable features: "Multiple Containers" and "Transformed" to save articles in a gallery
+
+3) Add category dropdown plus searchable input to access more stories.
+
+For Buddy Feature:
+1) Add unique quotes for each News Buddy
+
+2) Generate glorious name and allow user to accept or create their own
+
+3) Create a timer function where Buddy retrieves a random story suggested for user from a positive perspective.  
 
 # Collaborators
 Khaylla Hite KayWhyLA
@@ -21,6 +32,11 @@ Amanda Perry BeKind-Rewind
 https://bekind-rewind.github.io/animal-app/
 
 
-# Screen Shot
+# Screen Shots
 
+![News Buddy](/images/news-buddy?raw=true)
+![News Articles](/images/news-body.png?raw=true)
 
+# PowerPoint
+
+https://docs.google.com/presentation/d/1ToN33fX9Wn6oAqhg4hi0vT7Y4AqVQS8f_hqfg8tio-s/edit?usp=sharing

@@ -35,26 +35,26 @@ window.addEventListener('click', outsideClick);
 
 // function to close modal
 function closeModal(){
-    // // create list item
-    // var listBuddyEl = document.createElement("li");
-    // listBuddyEl.className = "buddyList";
-
-    // // create div to hold content and add to list item
-    // var contentInfoEl = document.createElement("div");
-
-    // // give it a class name
-    // contentInfoEl.className = "buddyUrl";
-
-    // JSON.parse(localStorage.getItem('randomDogPic', 'message'));
-    // document.getElementById('buddy').src = '';
-    // // add HTML content to div
-    // contentInfoEl.innerHTML = "<img src=" +  + "</>";
-    // listBuddyEl.appendChild(contentInfoEl);
-
-    // // add list item to list
-    // buddyEl.appendChild(listBuddyEl);
-
     modal.style.display = 'none';
+    // create list item
+    var listBuddyEl = document.createElement("li");
+    listBuddyEl.className = "buddyList";
+
+    // create div to hold content and add to list item
+    var contentInfoEl = document.createElement("div");
+
+    // give it a class name
+    contentInfoEl.className = "buddyUrl";
+
+    JSON.parse(localStorage.getItem('randomDogPic', 'message'));
+    document.getElementById('buddy').src = '';
+    // add HTML content to div
+    contentInfoEl.innerHTML = "<img src=" +  + "</>";
+    listBuddyEl.appendChild(contentInfoEl);
+
+    // add list item to list
+    buddyEl.appendChild(listBuddyEl);
+
 }
 
 // function to close modal if outside click
