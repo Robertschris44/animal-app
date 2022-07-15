@@ -64,7 +64,7 @@ function outsideClick(e){
     }
 }
 
-let apiUrl = "http://api.nytimes.com/svc/topstories/v2/world.json?api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
+let apiUrl = "https://api.nytimes.com/svc/topstories/v2/world.json?api-key=UhYa3vUq6CEUGa2w1YE358ZWzhD1DjEz"
 let headlines = document.getElementById('headlines');
 fetch(apiUrl)
 .then(response => response.json())
