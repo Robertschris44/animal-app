@@ -8,14 +8,17 @@ We used HTML, Tailwindcss, JavaScript to dynamically add elements and interact w
 
 # Future features
 
-Sortable: "Multiple Containers" and "Transformed"
+Users click a button to retrieve articles.
+Sortable: "Multiple Containers" and "Transformed" to save articles gallery
 
 # Collaborators
-Khaylla Hite
-Christopher Roberts
+Khaylla Hite KayWhyLA
+Christopher Roberts RobertsChris44
 Amanda Perry BeKind-Rewind
 
 # Deployed URL
+
+https://bekind-rewind.github.io/animal-app/
 
 
 # Screen Shot
